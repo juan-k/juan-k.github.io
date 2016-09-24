@@ -1,0 +1,204 @@
+/* --------------------------------------------
+ *                                            *
+ *	Author: Juan Camilo Diaz Perez            *
+ *                                            *
+--------------------------------------------- */
+
+/*Estilos generales (html, body)*/
+html,body{
+  height:100%;
+}
+
+body {
+	font-family: "Franklin Gothic Book", "Franklin Gothic Heavy", sans-serif;
+	font-weight: 300;
+	font-size: 18px;  
+	background-color: #006680;
+	min-width: 950px;
+	margin: 0;
+	padding: 0;
+	overflow:auto;
+}
+
+.container {
+	height:100%;
+}
+
+/*estilos cabecera*/
+header {	
+    z-index:99;
+	display:block;
+	min-width: 950px;
+	position: absolute; /*(o relative, según tu diseño)*/
+	width:100%;
+	top: 0px;
+	margin: 0;
+	padding: 0;
+	background-color: rgb( 35, 40, 40 );
+}
+
+/*estilos banner*/
+.banner{
+	margin: 16px;
+	
+}
+
+.banner img, h1 {
+	float: left;
+}
+
+.banner h1 {
+	margin-left: 32px;
+	margin-top: 0px;
+	color: rgb( 242, 242, 242 );
+}
+
+/*estilos barra de navegacion*/
+nav {
+	min-width: 600px;
+	background-color: rgb( 242, 242, 242 );
+	box-shadow: 0px 2px 20px #444;
+	color: #888;
+	display: block;
+	overflow: hidden;
+	position: middle;
+}
+
+nav ul {
+	margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	transition: all 0.2s; 
+	min-width: 100px;
+}
+
+nav > ul > li > a {
+	color: rgb( 40, 44, 47 );
+	display: block;
+	line-height: 38px;
+	padding: 0 24px;
+	text-decoration: none;
+}
+
+nav > ul > li:hover {
+	background-color: #ff5900;
+	opacity: 0.6;
+}
+
+nav > ul > li:hover > a {
+	color: rgb( 255, 255, 255 );
+}
+
+
+/*Estilos contenido*/
+.content {
+	height: 100%;
+	display: block;
+	margin: 0;
+	background-color: #006680;
+}
+
+/*Estilos barra lateral*/
+aside {	
+	float: left;
+	min-width: 20%;
+	height: 100%;
+	min-height: 1000px;
+	width: 20%;
+	margin-right: 5%;
+	padding-top: 150px;
+	background-color: #f2b80d;	
+	overflow: auto;
+	font-size: 14px;
+}
+
+
+aside article h3 {
+	display: block;
+	margin-left: 15px;
+}
+
+aside article ul {
+	margin: 0;
+    padding: 0;
+}
+
+aside article ul li {
+	display: block;
+	position: relative;
+	list-style-type: none;
+	transition: all 0.2s; 
+}
+
+aside > article > ul > li > a {
+	color: rgb( 40, 44, 47 );
+	display: block;
+	line-height: 38px;
+	padding: 0 24px;
+	text-decoration: none;
+}
+
+aside > article  > ul > li:hover {
+	background-color: rgba( 35, 40, 40, 0.8 );
+}
+
+aside > article  > ul > li:hover > a {
+	color: rgb( 255, 255, 255 );
+	font-weight: bold;
+}
+
+.sidecontent {
+	margin: 20px;
+	margin-top: 40px;
+}
+
+.sidecontent h3 {
+	display: block;
+	margin: 0px;
+}
+
+/*estilos cuerpo principal*/
+section {
+	float: left;
+	width: 70%;
+	height: 100%;
+	padding-top: 150px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	background-color: #006680;
+}
+
+section article{
+	background-color: rgba(240,240,240,0.6);
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	opacity: 0.6;
+	transition: all 0.2s; 
+}
+
+section article:hover {
+	opacity: 1;
+	box-shadow: 5px 5px 10px #232828;
+}
+
+/*estilos pie de pagina*/
+footer {
+	text-align: center;
+    height:36px;
+    width:100%;
+    bottom:0px;
+    left:0px;
+    background: rgb( 242, 242, 242 );
+    position:fixed;
+	box-shadow: 0px -2px 20px #444;
+} 
+
+footer small {
+	margin-top: -5px;
+	display: block;
+}
